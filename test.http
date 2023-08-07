@@ -1,0 +1,32 @@
+### GET ALL 
+GET http://127.0.0.1:5050 HTTP/1.1
+
+
+###
+GET http://127.0.0.1:5050/tasks HTTP/1.1
+
+###
+GET http://127.0.0.1:5050/tasks/8 HTTP/1.1
+
+
+###
+POST http://127.0.0.1:5050/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "New6",
+    "nameLat": "ABC"
+}
+
+
+###
+PUT http://127.0.0.1:5050/tasks/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "New8",
+    "nameLat": "111111"
+}
+
+###
+DELETE http://127.0.0.1:5050/tasks/5 HTTP/1.1

@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  db:
+    build: .
+    restart: always
+    environment:
+      - POSTGRES_USER=Mike
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=app
+    ports:
+      - "8000:5432"
+    volumes:
+      - pgdata-catalog:/var/lib/postgresql/data
+volumes:
+  pgdata-catalog:
